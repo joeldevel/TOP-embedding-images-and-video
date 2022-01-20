@@ -1,5 +1,8 @@
 :root {
-  --bg-primary: #333;
+  --bg-primary: #181818;
+  --bg-nav:#212121;
+  --text-white: #fff;
+  --sign-in-btn: dodgerblue;
 }
 
 * {
@@ -13,9 +16,10 @@ body {
 }
 
 .nav {
-  background: red;
+  background: var(--bg-nav);
   height: 8vh;
   display: flex;
+  padding: 10px 20px;
 }
 
 .main {
@@ -30,23 +34,83 @@ body {
 /* top navigation
 ==============================================================================*/
 .nav-left-container {
-  flex: 0.10;
-  background: rgba(0, 0, 0, 0.3);
+  flex: 0.12;
+  /* background: rgba(0, 0, 0, 0.3); */
+  /* background: blue;; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.yt-logo {
+  height: 30px;
+}
+
+.yt-logo-text {
+  color: var(--text-white);
+  font-family: sans-serif;
+  font-size: 18px;
+  padding-left: 3px;
 }
 
 .nav-middle-container {
   flex: 1;
-  background: rgba(0, 0, 0, 0.5);
+  /* background: rgba(0, 0, 0, 0.5); */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .nav-right-container {
-  flex: 0.10;
-  background: rgba(0, 0, 0, 0.3);
+  flex: 0.12;
+  /* background: rgba(0, 0, 0, 0.3); */
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
+.apps {
+}
+
+.apps img {
+  width: 20px;
+}
+
+.settings {
+
+}
+
+.settings img {
+
+  /* margin-right: 20px;  */
+}
+
+.sign-in {
+  border: 1px solid var(--sign-in-btn);
+  display: inline-flex;
+  padding: 6px;
+  color: var(--sign-in-btn);
+  font-family: sans-serif;
+  text-transform: uppercase;
+  align-items: center;
+  border-radius: 2px;
+  font-size: 14px;
+}
+
+.avatar-placeholder {
+  height: 20px;
+  width: 20px;
+  border-radius: 100px;
+  display: block;
+  border: 1px solid var(--sign-in-btn);
+  margin-right: 6px;
+}
 /* main content
 ==============================================================================*/
 .main-content-container {
