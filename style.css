@@ -13,6 +13,7 @@
 
 body {
   background: var(--bg-primary);
+  font-family: sans-serif;
 }
 
 .nav {
@@ -23,7 +24,7 @@ body {
 }
 
 .main {
-  background: blue;
+  /* background: blue; */
   min-height: 92vh;
   max-width: 1600px;
   margin: 0 auto;
@@ -115,20 +116,27 @@ body {
 ==============================================================================*/
 .main-content-container {
   flex: 1;
-  background: orangered;
+  /* background: orangered; */
   margin-right: 20px;
 }
 
 /* video player
 ==============================================================================*/
 .video-container {
-  height: 500px;
-  background: #123;
+  height: 800px;
+  /* background: #123; */
 }
 
 .video-player {
   height: 80%;
   background: #321;
+  margin-bottom: 30px;
+}
+
+.video-title {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 /* comments section
@@ -139,10 +147,12 @@ body {
 }
 
 .comment-box {
-  background: #999;
+  /* background: #999; */
   display: flex;
   height: 100px;
   margin-bottom: 10px;
+  color: #fff;
+  align-items: center;
 }
 
 .commenter-avatar {
@@ -150,13 +160,13 @@ body {
   width: 40px;
   background: #f08;
   border-radius: 100px;
-
+  margin-right: 10px;
 }
 
 /* next videos list
 ==============================================================================*/
 .next-videos-queue-container {
-  background: plum;
+  /* background: plum; */
   flex: 0.25;
   display: flex;
   flex-direction: column;
@@ -165,6 +175,41 @@ body {
 
 .next-video-container {
     height: 100px;
-    background: #666;
+    /* background: #666; */
     margin-bottom: 6px;
+    display: flex;
+}
+
+.next-video-thumbnail-container {
+  flex: 0.8;
+  /* border: 1px solid: ; white; */
+  background: #999;
+}
+
+.next-video-thumbnail {
+  background: #fff;
+  width: 100px;
+}
+
+.next-video-data {
+  padding: 0 10px 20px 10px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.next-video-title {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.next-video-data p {
+  font-size: 10px;
+  color: #999;
+}
+.next-video-data .views-date {
+  font-size: 8px;
+  color: #999;
 }
